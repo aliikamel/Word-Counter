@@ -4,7 +4,10 @@ import CreateIcon from '@mui/icons-material/Create';
 
 function Header(){
     return (
-        <header><h1><CreateIcon/> Word Counter</h1></header>
+        <header>
+        <h1><CreateIcon/> Word Counter</h1>
+        <h1>By Chamel</h1>
+        </header>
     )
 }
 

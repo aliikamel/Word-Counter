@@ -40,19 +40,21 @@ function TextBox() {
     return (
         <div className="text-area">
             <div>
-                <p>Characters: {charCount}</p>
-                <p>Words: {wordCount}</p>
+                <div className="counters">
+                    <p id="char-count">Words: {wordCount}</p>
+                    <p id="word-count">Characters: {charCount}</p>
+                </div>
+                <textarea
+                    value={text}
+                    onClick={expand}
+                    onChange={handleChange}
+                    name="textArea"
+                    cols={isExpanded ? 100 : 50} rows={isExpanded ? 20 : 4}>
+                </textarea>
+                <Zoom in={isExpanded}>
+                    <Fab id="btn" onClick={handleDelete}><DeleteIcon /></Fab>
+                </Zoom>
             </div>
-            <textarea
-                value={text}
-                onClick={expand}
-                onChange={handleChange}
-                name="textArea"
-                cols={isExpanded ? 100 : 50} rows={isExpanded ? 20 : 4}>
-            </textarea>
-            <Zoom in={isExpanded}>
-                <Fab id="btn" onClick={handleDelete}><DeleteIcon /></Fab>
-            </Zoom>
         </div>
     )
 }

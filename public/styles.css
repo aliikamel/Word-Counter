@@ -28,19 +28,27 @@ header h1 {
     font-weight: 600;
 }
 
-.text-area{
+.text-area {
     text-align: center;
     margin: 20% auto 20% auto;
 }
 
-.text-area p{
-    display: inline;
+
+.counters {
     margin-right: 20px;
     font-size: 2rem;
     font-weight: 600;
+    width: 50%;
+    margin: 0 auto;
 }
 
-#btn{
+
+#btn {
     background-color: #1a99e9;
     color: white;
+}
+
+textarea{
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
 }
